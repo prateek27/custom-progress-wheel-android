@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Spin Mode" />
+
+    <Button
+        android:id="@+id/btn_increment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:text="Increment Mode" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <com.example.progresswheelnew.ProgressWheel
+                    android:id="@+id/progressBarFour"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="124dp"
+                    android:layout_marginRight="108dp"
+                    ProgressWheel:barColor="#cc944675"
+                    ProgressWheel:barLength="30dp"
+                    ProgressWheel:barWidth="25dp"
+                    ProgressWheel:delayMillis="75"
+                    ProgressWheel:rimColor="#ccffffff"
+                    ProgressWheel:rimWidth="20dp"
+                    ProgressWheel:spinSpeed="4dp"
+                    ProgressWheel:text="Looking for People..."
+                    ProgressWheel:textColor="#fff"
+                    ProgressWheel:textSize="15sp" />
+
+                <com.example.progresswheelnew.ProgressWheel
+                    android:id="@+id/progressBarTwo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/progressBarFour"
+                    ProgressWheel:barColor="#944675"
+                    ProgressWheel:barLength="60dp"
+                    ProgressWheel:barWidth="20dp"
+                    ProgressWheel:rimColor="#44944675"
+                    ProgressWheel:rimWidth="20dp"
+                    ProgressWheel:spinSpeed="2dp"
+                    ProgressWheel:text="Play"
+                    ProgressWheel:textColor="#944675"
+                    ProgressWheel:textSize="14sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.example.progresswheelnew.ProgressWheel
+                android:id="@+id/progressBarThree"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                ProgressWheel:barColor="#8000"
+                ProgressWheel:barLength="20dp"
+                ProgressWheel:barWidth="25dp"
+                ProgressWheel:circleColor="#2E9121"
+                ProgressWheel:rimColor="#44000000"
+                ProgressWheel:rimWidth="25dp"
+                ProgressWheel:spinSpeed="-1dp"
+                ProgressWheel:text=""
+                ProgressWheel:textColor="#222222"
+                ProgressWheel:textSize="14sp" />
+
+            <ProgressBar
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <com.example.progresswheelnew.ProgressWheel
+                android:id="@+id/progressBarFour"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                ProgressWheel:barColor="#222"
+                ProgressWheel:barLength="30dp"
+                ProgressWheel:barWidth="10dp"
+                ProgressWheel:delayMillis="75"
+                ProgressWheel:rimColor="#944675"
+                ProgressWheel:rimWidth="5dp"
+                ProgressWheel:spinSpeed="5dp"
+                ProgressWheel:text="Play"
+                ProgressWheel:textColor="#222222"
+                ProgressWheel:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Todd Davies - 2012"
+        android:textColor="#000" />
+
+</RelativeLayout>

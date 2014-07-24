@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <com.example.progresswheelnew.ProgressWheel
+            android:id="@+id/progressBarFour"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            ProgressWheel:barColor="#944675"
+            ProgressWheel:barLength="30dp"
+            ProgressWheel:barWidth="25dp"
+            ProgressWheel:delayMillis="75"
+            ProgressWheel:rimColor="#fff"
+            ProgressWheel:rimWidth="20dp"
+            ProgressWheel:spinSpeed="10dp"
+            ProgressWheel:text="Looking for People..."
+            ProgressWheel:textColor="#fff"
+            ProgressWheel:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
